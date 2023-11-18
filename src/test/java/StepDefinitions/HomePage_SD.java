@@ -32,7 +32,7 @@ public class HomePage_SD {
 	}
 	
 	@When("^User added products (.+) with each having quantity (.+) into the cart$")
-	public void user_added_products_cucumber_carrot_beans_into_the_cart(String products, int quantity) throws InterruptedException {
+	public void user_added_products_into_the_cart(String products, int quantity) throws InterruptedException {
 	    parent.homePage.addProductToCart(parent.genericResource.convertToList(products),quantity);
 	    Thread.sleep(2000);
 	    parent.homePage.openCart();

@@ -12,7 +12,7 @@ public class CheckoutPage_SD {
 	}
 	
 	@When("^User select country (.+) and perform checkout$")
-	public void user_select_country_india_and_perform_checkout(String country) throws InterruptedException {
+	public void user_select_country_and_perform_checkout(String country) throws InterruptedException {
 	    parent.cartPage = parent.pageObjectsManager.getCartPage();
 	    Thread.sleep(2000);
 	    parent.cartPage.placeOrder();
