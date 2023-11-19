@@ -34,7 +34,7 @@ public class GenericResource {
 
 	public static String getProperty(String Key) throws IOException {
 		FileInputStream FIS = new FileInputStream(
-				"/Users/anubhavgupta/Documents/eclipse-workspace(Java)/UI_CucumberFramework/Resources/GlobalData.properties");
+				"/Users/anubhavgupta/Documents/eclipse-workspace(Java)/UI_CucumberFramework/src/test/resources/GlobalData.properties");
 		Properties prop = new Properties();
 		prop.load(FIS);
 		return prop.getProperty(Key);

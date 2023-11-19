@@ -10,5 +10,4 @@ Examples:
 |Shortname|
 |Tom			|
 |Pot			|
-|Beet			|
 
