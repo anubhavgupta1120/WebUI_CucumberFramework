@@ -12,11 +12,10 @@ import io.cucumber.testng.CucumberOptions;
 //extent.reporter.spark.start = true
 //extent.reporter.spark.out = TestReports/spark.html
 ///Users/anubhavgupta/Documents/eclipse-workspace(Java)/UI_CucumberFramework/src/test/resources/extent.properties -> properties file location should be this only
-@CucumberOptions(features = "FeatureFiles", glue = "StepDefinitions", monochrome = true, plugin = {
+@CucumberOptions(features = "@target/failed_scenarios.txt", glue = "StepDefinitions", monochrome = true, plugin = {
 		"html:Reports/HTML_Reports/cucumber.html", "json:Reports/HTML_Reports/cucumber.json",
-		"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
-		"rerun:target/failed_scenarios.txt"})
-public class TestRunner_TestNg extends AbstractTestNGCucumberTests {
+		"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"})
+public class FailedScenariosTestRunner extends AbstractTestNGCucumberTests {
 	@Override
 	@DataProvider(parallel = true)
 	public Object[][] scenarios() {

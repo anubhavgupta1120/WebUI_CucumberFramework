@@ -1,5 +1,5 @@
 Feature: Validate the User Flow
-
+@PlaceOrder
 Scenario Outline: Validating user flow by successfully placing the order
 Given User is on GreenKart Home Page
 When User added products <product_list> with each having quantity <quantity> into the cart
